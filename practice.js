@@ -122,6 +122,19 @@ function uniq(arr, cb) {
   return cb(arr);
 }
 
+/*
+function uniq(arr, cb) {
+  var arr2 = [];
+  for (var i = 0; i < arr.length; i++) {
+    if (arr2.indexOf(arr[i]) === -1) {
+      arr2.push(arr[i]);
+    }
+  }
+  return cb(arr2);
+}
+*/
+
+
 // Do not edit the code below.
 uniq(names, function (uniqArr) {
   console.log('The new names array with all the duplicate items removed is ', uniqArr);
